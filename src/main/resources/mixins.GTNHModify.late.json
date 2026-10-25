@@ -5,7 +5,10 @@
   "refmap": "mixins.GTNHModify.refmap.json",
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [],
+  "mixins": [
+    "gregtech.MTEBasicMachineChanceMixin",
+    "gregtech.ParallelHelperChanceMixin"
+  ],
   "client": [],
   "server": []
 }
