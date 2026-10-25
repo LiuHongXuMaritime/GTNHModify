@@ -1,11 +1,6 @@
 package com.github.wohaopa.GTNHModify.tweakers;
 
-import com.github.wohaopa.GTNHModify.tweakers.gt.DynamicDuration;
-import com.github.wohaopa.GTNHModify.tweakers.gt.EnergyLessTweaker;
-import com.github.wohaopa.GTNHModify.tweakers.gt.InputOne;
-import com.github.wohaopa.GTNHModify.tweakers.gt.OneTickTweaker;
-import com.github.wohaopa.GTNHModify.tweakers.gt.Output64;
-import com.github.wohaopa.GTNHModify.tweakers.gt.TenthsTweaker;
+import com.github.wohaopa.GTNHModify.tweakers.gt.*;
 import com.github.wohaopa.GTNHModify.tweakers.handler.BotaniaHandler;
 import com.github.wohaopa.GTNHModify.tweakers.handler.GregTechHandler;
 import com.github.wohaopa.GTNHModify.tweakers.handler.MinecraftHandler;
@@ -27,9 +22,13 @@ public enum Tweakers {
     GGNaquadahReactor("Other GGNaquadahReactor", "Ten times the burn time.", new GGNaquadahReactorTweaker()),
     // Homo
     EyeOfHarmonyRecipe("Other EyeOfHarmonyRecipeTweaker", "Some enhancement.", new EyeOfHarmonyRecipeTweaker()),
+    // chanceChange
+    OutputChance("GT_Recipe OutputChance", "Chance = minimum output chance (0~10000), ChanceRate = multiplier.",
+        new OutputChanceTweaker()),
+    VoltageChance("GT_Recipe VoltageChance", "Each voltage tier above the recipe adds 5% output chance.",
+        new VoltageChanceTweaker()),
 
     // Handler
-
     Botania("Handle Botania", "The time of some devices was changed to 1 tick.", BotaniaHandler.instance),
     GregTech("Handle GregTech", "The time of some devices was changed to 1 tick", GregTechHandler.instance),
     Minecraft("Handle Minecraft", "The time of some devices was changed to 1 tick", MinecraftHandler.instance),
