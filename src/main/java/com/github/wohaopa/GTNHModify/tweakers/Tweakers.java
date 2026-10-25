@@ -1,6 +1,12 @@
 package com.github.wohaopa.GTNHModify.tweakers;
 
-import com.github.wohaopa.GTNHModify.tweakers.gt.*;
+import com.github.wohaopa.GTNHModify.tweakers.gt.DynamicDuration;
+import com.github.wohaopa.GTNHModify.tweakers.gt.EnergyLessTweaker;
+import com.github.wohaopa.GTNHModify.tweakers.gt.InputOne;
+import com.github.wohaopa.GTNHModify.tweakers.gt.OneTickTweaker;
+import com.github.wohaopa.GTNHModify.tweakers.gt.Output64;
+import com.github.wohaopa.GTNHModify.tweakers.gt.OutputChanceTweaker;
+import com.github.wohaopa.GTNHModify.tweakers.gt.TenthsTweaker;
 import com.github.wohaopa.GTNHModify.tweakers.handler.BotaniaHandler;
 import com.github.wohaopa.GTNHModify.tweakers.handler.GregTechHandler;
 import com.github.wohaopa.GTNHModify.tweakers.handler.MinecraftHandler;
